@@ -28,7 +28,9 @@ SECRET_KEY = '_-pol%g21cwgca_39$*+d2*32habhz3lua2l7u2f1*zcrhyc9o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'rabbithole-webapp.herokuapp.com'
+]
 
 
 # Application definition
@@ -155,7 +157,8 @@ STATIC_URL = 'static/'
 # ]
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend/dist'),    
+    os.path.join(BASE_DIR, "assets"),
+    os.path.join(BASE_DIR, 'frontend2/dist'),    
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
